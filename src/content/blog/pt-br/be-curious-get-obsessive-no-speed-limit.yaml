@@ -1,0 +1,142 @@
+title: "Seja Curioso, Seja Obcecado, Não Há Limite de Velocidade"
+description: "Três coisas que percebi que ótimos desenvolvedores de software têm em comum, e o que podemos aprender com elas."
+publishDate: 2024-01-05
+lang: pt-br
+translationId: be-curious-get-obsessive-no-speed-limit
+tags: [career, mindset]
+body: |
+  Sendo desenvolvedor de software há anos, já vi muita gente boa trabalhando
+  comigo. O que todas essas pessoas boas têm em comum? Será que podemos
+  aprender algo com elas?
+
+  ## Seja curioso
+
+  Como desenvolvedor de software, você precisa ser curioso. Precisa se
+  perguntar toda vez: "por que esse código é assim?" Por que temos esse
+  código dessa forma? Podemos melhorar esse código? Esse código pode ser
+  otimizado?
+
+  Lembro de várias vezes em que alguém chegava perto de mim e perguntava:
+  "Por que temos isso aqui?" Só essa pergunta simples já me fazia pensar
+  mais profundamente sobre o problema.
+
+  Abraçar a curiosidade faz você ir mais fundo na base de código, explorando
+  possibilidades de melhoria e eficiência. É esse questionamento constante
+  que leva a soluções mais elegantes, melhor performance e, no final,
+  software de maior qualidade.
+
+  ## Seja obcecado
+
+  Embora a palavra "obsessão" possa soar mal, existe um lado bom nela. É um
+  sinônimo de paixão. Paixão costuma ser definida como um desejo intenso ou
+  entusiasmo por algo.
+
+  Algumas pessoas usam essa palavra ao falar sobre melhoria ou como ficar
+  melhor em algo — por exemplo, [David Goggins](https://www.youtube.com/watch?v=fuaxuHYd8kk).
+
+  As pessoas costumam usar a palavra "obcecado" porque ela representa um
+  entusiasmo ou empolgação forte por algo. Ser apaixonado pelo que você faz
+  traz um senso de propósito e realização para a sua vida. Isso te motiva a
+  colocar o esforço e a dedicação necessários para ter sucesso — você está
+  abraçando sua paixão e deixando que ela te leve em direção aos seus
+  objetivos.
+
+  Onde essa paixão mais rende é na qualidade. Comprometa-se com a
+  competência: se importe com o ofício em si, não só com entregar. Seja
+  obcecado pelos pull requests que você abre — releia cada um antes que
+  outra pessoa precise fazer isso, e revise os dos outros com a mesma
+  atenção que você gostaria de receber nos seus. Se esforce para fazer o
+  melhor que puder.
+
+  ## Não há limite de velocidade
+
+  [Este artigo](https://sive.rs/kimo) fala sobre a importância do ritmo, e
+  de como ele não deveria ser comparado ao dos outros. É importante lembrar
+  que cada pessoa tem seus próprios limites e seu próprio ritmo, então se
+  comparar com outra pessoa não é produtivo.
+
+  Ainda que seja essencial não se comparar com os outros, também é
+  igualmente importante não se limitar. Faça questão de escrever o melhor
+  código possível e dar o seu melhor em tudo o que faz.
+
+  Lembre-se: você é o protagonista da sua carreira. Não é responsabilidade
+  do seu gestor assumir a posse dela — você deve assumir a posse da sua
+  própria carreira e estar preparado para enfrentar as consequências,
+  positivas ou negativas, das suas ações. Isso pode soar como clichê, mas
+  se você aplicar essa mentalidade a cada decisão que tomar, vai começar a
+  dar cada passo da sua carreira de forma mais consciente.
+
+  Expanda seu conhecimento saindo da sua zona de conforto. Como
+  desenvolvedor de software, é fundamental abraçar desafios e explorar
+  áreas desconhecidas — seja aprender uma nova linguagem de programação ou
+  encarar problemas complexos. Cultive uma mentalidade de crescimento e
+  melhoria contínuos.
+
+  Projetos pessoais e autodesenvolvimento são cruciais na carreira de um
+  engenheiro de software. Dedicar tempo além do horário de trabalho para
+  crescimento pessoal, explorar novas tecnologias e aprender na prática por
+  meio de projetos pessoais pode ter um impacto enorme no seu crescimento.
+  É um investimento extra que costuma levar a avanços nas suas habilidades
+  — como Robert C. Martin coloca, ler e se exercitar sempre fazem bem e vão
+  te ajudar.
+
+  Quais são as coisas que você quer melhorar?
+
+  - Não se sente confortável com regex? Dedique um tempo pra estudar e
+    praticar.
+  - Não se sente confortável com Ruby? Suba um projeto Rails e aprenda.
+  - Está com dificuldade em SQL? Vá praticar com o seu banco de dados.
+  - Não tem confiança com Git? Pratique branching, merge, rebase e
+    resolução de conflitos colaborando em projetos open-source ou criando o
+    seu próprio repositório.
+  - Sente dificuldade em debugar? Pegue uma base de código com bugs,
+    introduza bugs de propósito e pratique debugar e resolver cada um deles
+    de forma sistemática.
+  - Quer melhorar performance? Identifique uma parte lenta da sua aplicação
+    e trabalhe em otimizá-la, analisando os gargalos e aplicando técnicas de
+    melhoria de performance.
+  - Está com dificuldade de acompanhar novas tecnologias? Dedique tempo a
+    newsletters, blogs, podcasts ou cursos relacionados à sua área para se
+    manter atualizado com as tendências do mercado.
+
+  Saia da sua zona de conforto. Passe tempo com você mesmo e com o código.
+
+  Muitos desenvolvedores que conheço, em algum momento da vida, se
+  mergulharam profundamente em construir coisas e focaram no processo de
+  aprender. Esse tempo costuma ser crucial tanto para o crescimento pessoal
+  quanto para o desenvolvimento profissional deles.
+
+  Do livro [The Clean Coder](https://www.goodreads.com/book/show/11486819-clean-coder-the):
+
+  > A sua carreira é responsabilidade sua. Não é responsabilidade do seu
+  > empregador garantir que você seja empregável. Não é responsabilidade do
+  > seu empregador te treinar, te enviar para conferências ou te comprar
+  > livros. Essas coisas são responsabilidade sua. Ai daquele desenvolvedor
+  > de software que entrega sua carreira nas mãos do seu empregador. [...]
+  > Você deve ao seu empregador uma certa quantidade de tempo e esforço.
+  > Para efeito de argumento, vamos usar o padrão americano de 40 horas por
+  > semana. Essas 40 horas devem ser dedicadas aos problemas do seu
+  > empregador, não aos seus. Você deveria planejar trabalhar 60 horas por
+  > semana. As primeiras 40 são para o seu empregador. As 20 restantes são
+  > para você. Durante essas 20 horas restantes, você deveria estar lendo,
+  > praticando, aprendendo e de outras formas aprimorando sua carreira.
+  > [...] Presumivelmente você se tornou desenvolvedor de software porque é
+  > apaixonado por software, e seu desejo de ser um profissional é
+  > motivado por essa paixão. Durante essas 20 horas, você deveria estar
+  > fazendo as coisas que reforçam essa paixão. Essas 20 horas deveriam ser
+  > divertidas!
+
+  ## Conclusão
+
+  Seja curioso. É isso que impulsiona a exploração, a inovação e a
+  resolução de problemas. Manter essa chama da curiosidade acesa leva a um
+  aprendizado e crescimento constantes.
+
+  Seja obcecado por boa qualidade. Para programadores, isso significa
+  revisar um pull request repetidas vezes até que ele fique tão bonito
+  quanto funcionalmente correto.
+
+  Não há limite de velocidade. Trata-se de se desafiar constantemente e
+  atravessar o desconforto para alcançar seus objetivos — definindo o seu
+  próprio ritmo, guiado pela sua própria paixão e dedicação, em vez de ficar
+  preso ao que é considerado progresso padrão ou típico.

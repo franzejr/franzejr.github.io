@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PostCard from '../../../components/PostCard.astro';
+import { getPostsByLang } from '../../../lib/posts';
+
+const posts = await getPostsByLang('pt-br');
+---
+
+<BaseLayout lang="pt-br" path="/blog" title="Blog — Franze M" description="Posts de blog por Franze M.">
+  <h1>Blog</h1>
+  {posts.length === 0 && <p class="muted">Ainda não há posts — volte em breve.</p>}
+  {posts.map((post) => <PostCard post={post} lang="pt-br" />)}
+</BaseLayout>

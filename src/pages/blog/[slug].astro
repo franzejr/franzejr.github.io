@@ -1,0 +1,50 @@
+---
+import { getCollection } from 'astro:content';
+import { marked } from 'marked';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { slugOf, getPostLangLinks } from '../../lib/posts';
+import { useTranslations } from '../../i18n/utils';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', (post) => post.data.lang === 'en');
+  return posts.map((post) => ({
+    params: { slug: slugOf(post) },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const t = useTranslations('en');
+const langLinks = await getPostLangLinks(post);
+const html = marked.parse(post.data.body);
+const formattedDate = post.data.publishDate.toLocaleDateString('en', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<BaseLayout
+  lang="en"
+  path={`/blog/${slugOf(post)}`}
+  title={`${post.data.title} — Franze M`}
+  description={post.data.description}
+  langLinks={langLinks}
+>
+  <p><a href="/blog/">← {t('blog.backToBlog')}</a></p>
+  <h1>{post.data.title}</h1>
+  <p class="muted">{formattedDate}</p>
+  <div class="prose" set:html={html} />
+</BaseLayout>
+
+<style>
+  .prose :global(h2) {
+    margin-top: 2rem;
+  }
+  .prose :global(pre) {
+    overflow-x: auto;
+    padding: 1rem;
+    background: var(--color-border);
+    border-radius: 0.375rem;
+  }
+</style>

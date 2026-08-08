@@ -1,0 +1,53 @@
+---
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { useTranslations, localizedPath } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  path: string;
+  langLinks?: Partial<Record<Lang, string>>;
+}
+
+const { lang, path, langLinks } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<header>
+  <div class="bar">
+    <a class="brand" href={localizedPath(lang, '/')}>Franze M</a>
+    <nav aria-label="Main navigation">
+      <a href={localizedPath(lang, '/')}>{t('nav.home')}</a>
+      <a href={localizedPath(lang, '/blog')}>{t('nav.blog')}</a>
+      <a href={localizedPath(lang, '/contact')}>{t('nav.contact')}</a>
+    </nav>
+    <LanguageSwitcher lang={lang} path={path} links={langLinks} />
+  </div>
+</header>
+
+<style>
+  header {
+    border-bottom: 1px solid var(--color-border);
+  }
+  .bar {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.5rem;
+  }
+  .brand {
+    font-weight: 700;
+    color: var(--color-text);
+    margin-right: auto;
+  }
+  nav[aria-label='Main navigation'] {
+    display: flex;
+    gap: 1rem;
+  }
+  nav[aria-label='Main navigation'] a {
+    color: var(--color-text-muted);
+  }
+</style>

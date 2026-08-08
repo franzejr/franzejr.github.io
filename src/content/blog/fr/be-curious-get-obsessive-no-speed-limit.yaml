@@ -1,0 +1,147 @@
+title: "Soyez curieux, devenez obsédé, il n'y a pas de limite de vitesse"
+description: "Trois points communs que j'ai remarqués chez les excellents développeurs logiciels, et ce qu'on peut en apprendre."
+publishDate: 2024-01-05
+lang: fr
+translationId: be-curious-get-obsessive-no-speed-limit
+tags: [career, mindset]
+body: |
+  Développeur logiciel depuis des années, j'ai vu passer beaucoup de gens
+  compétents à mes côtés. Qu'est-ce que toutes ces personnes ont en commun ?
+  Peut-on en tirer une leçon ?
+
+  ## Soyez curieux
+
+  En tant que développeur, vous devez être curieux. Vous devez vous
+  demander à chaque fois : « pourquoi ce code est-il ainsi ? » Pourquoi
+  avons-nous ce code sous cette forme ? Peut-on l'améliorer ? Peut-on
+  l'optimiser ?
+
+  Je me souviens de nombreuses fois où quelqu'un est venu me voir et m'a
+  demandé : « pourquoi avons-nous ça ? » Cette simple question suffisait à
+  me faire réfléchir plus en profondeur au problème.
+
+  Cultiver sa curiosité pousse à aller plus loin dans la base de code, à
+  explorer les possibilités d'amélioration et d'efficacité. C'est ce
+  questionnement constant qui mène à des solutions plus élégantes, de
+  meilleures performances et, au final, à un logiciel de meilleure qualité.
+
+  ## Devenez obsédé
+
+  Même si le mot « obsession » peut sembler négatif, il a aussi un bon
+  côté : c'est un synonyme de passion. La passion se définit souvent comme
+  un désir intense ou un enthousiasme pour quelque chose.
+
+  Certaines personnes emploient ce mot en parlant de progression ou de la
+  façon de s'améliorer — par exemple, [David Goggins](https://www.youtube.com/watch?v=fuaxuHYd8kk).
+
+  On utilise généralement le mot « obsédé » parce qu'il traduit un
+  enthousiasme ou une excitation forte pour quelque chose. Être passionné
+  par ce que l'on fait apporte un sentiment de sens et d'accomplissement
+  dans la vie. Cela pousse à fournir l'effort et la discipline nécessaires
+  pour réussir — on assume sa passion et on la laisse nous guider vers ses
+  objectifs.
+
+  C'est sur la qualité que cette passion rapporte le plus. Engagez-vous
+  envers la compétence : intéressez-vous au métier lui-même, pas seulement
+  à la livraison. Soyez obsédé par les pull requests que vous ouvrez —
+  relisez-les avant que quelqu'un d'autre ait à le faire, et relisez celles
+  des autres avec l'attention que vous aimeriez qu'on porte aux vôtres.
+  Efforcez-vous de faire de votre mieux.
+
+  ## Il n'y a pas de limite de vitesse
+
+  [Cet article](https://sive.rs/kimo) parle de l'importance du rythme, et
+  du fait qu'il ne devrait pas être comparé à celui des autres. Il est
+  important de se rappeler que chacun a ses propres limites et son propre
+  rythme, donc se comparer aux autres n'est pas productif.
+
+  Bien qu'il soit essentiel de ne pas se comparer aux autres, il est tout
+  aussi important de ne pas se limiter soi-même. Assurez-vous d'écrire le
+  meilleur code possible et de donner le meilleur de vous-même en toute
+  chose.
+
+  Rappelez-vous : vous êtes le protagoniste de votre carrière. Ce n'est pas
+  à votre manager d'en prendre la responsabilité — c'est à vous de prendre
+  possession de votre propre carrière et d'être prêt à assumer les
+  conséquences, positives ou négatives, de vos actions. Cela peut sembler
+  cliché, mais si vous appliquez cet état d'esprit à chaque décision, vous
+  commencerez à avancer dans votre carrière de manière plus consciente.
+
+  Élargissez vos connaissances en sortant de votre zone de confort. En tant
+  que développeur, il est essentiel de relever des défis et d'explorer des
+  domaines inconnus — que ce soit apprendre un nouveau langage de
+  programmation ou s'attaquer à des problèmes complexes. Cultivez un état
+  d'esprit de croissance et d'amélioration continues.
+
+  Les projets personnels et l'amélioration de soi sont essentiels dans une
+  carrière d'ingénieur logiciel. Consacrer du temps en dehors des heures de
+  travail à sa croissance personnelle, à l'exploration de nouvelles
+  technologies et à l'apprentissage pratique via des projets personnels
+  peut avoir un impact considérable sur votre progression. C'est un
+  investissement supplémentaire qui mène souvent à une montée en
+  compétences — comme le dit Robert C. Martin, lire et faire de l'exercice
+  sont toujours bénéfiques et vous aideront.
+
+  Qu'est-ce que vous aimeriez améliorer ?
+
+  - Pas à l'aise avec les regex ? Prenez le temps de les étudier et de les
+    pratiquer.
+  - Pas à l'aise avec Ruby ? Lancez un projet Rails et apprenez.
+  - Des difficultés avec le SQL ? Allez vous entraîner sur votre base de
+    données.
+  - Pas confiant avec Git ? Entraînez-vous au branching, au merge, au
+    rebase et à la résolution de conflits en collaborant sur des projets
+    open source ou en créant votre propre dépôt.
+  - Le débogage vous met en difficulté ? Prenez une base de code buguée,
+    introduisez volontairement des bugs, et entraînez-vous à les déboguer
+    et à les résoudre de façon systématique.
+  - Envie d'améliorer les performances ? Repérez une partie lente de votre
+    application et optimisez-la en analysant les goulots d'étranglement et
+    en appliquant des techniques d'amélioration des performances.
+  - Du mal à suivre les nouvelles technologies ? Consacrez du temps aux
+    newsletters, blogs, podcasts ou formations en lien avec votre domaine
+    pour rester à jour sur les tendances du secteur.
+
+  Sortez de votre zone de confort. Passez du temps avec vous-même et avec
+  le code.
+
+  Beaucoup de développeurs que je connais se sont, à un moment de leur vie,
+  profondément immergés dans la construction de projets et le processus
+  d'apprentissage. Cette période est souvent cruciale, à la fois pour leur
+  développement personnel et professionnel.
+
+  Extrait du livre [The Clean Coder](https://www.goodreads.com/book/show/11486819-clean-coder-the) :
+
+  > Votre carrière est votre responsabilité. Ce n'est pas à votre employeur
+  > de veiller à ce que vous restiez employable. Ce n'est pas à votre
+  > employeur de vous former, de vous envoyer à des conférences ou de vous
+  > acheter des livres. Ces choses sont de votre responsabilité. Malheur au
+  > développeur logiciel qui confie sa carrière à son employeur. [...] Vous
+  > devez à votre employeur une certaine quantité de temps et d'effort.
+  > Pour les besoins de l'argument, prenons la norme américaine de 40
+  > heures par semaine. Ces 40 heures doivent être consacrées aux
+  > problèmes de votre employeur, pas aux vôtres. Vous devriez prévoir de
+  > travailler 60 heures par semaine. Les 40 premières sont pour votre
+  > employeur. Les 20 restantes sont pour vous. Pendant ces 20 heures, vous
+  > devriez lire, pratiquer, apprendre, et faire progresser votre carrière
+  > d'une autre façon. [...] Vous êtes probablement devenu développeur
+  > logiciel parce que vous êtes passionné par le logiciel, et votre envie
+  > d'être un professionnel est motivée par cette passion. Pendant ces 20
+  > heures, vous devriez faire les choses qui nourrissent cette passion.
+  > Ces 20 heures devraient être un plaisir !
+
+  ## Conclusion
+
+  Soyez curieux. C'est ce qui alimente l'exploration, l'innovation et la
+  résolution de problèmes. Garder cette flamme de curiosité allumée mène à
+  un apprentissage et une croissance constants.
+
+  Devenez obsédé par la qualité. Pour un développeur, cela veut dire relire
+  une pull request encore et encore jusqu'à ce qu'elle soit aussi
+  esthétique que fonctionnellement correcte.
+
+  Il n'y a pas de limite de vitesse. Il s'agit de se mettre constamment au
+  défi et de traverser l'inconfort pour atteindre ses objectifs — en fixant
+  son propre rythme, guidé par sa propre passion et sa propre discipline,
+  plutôt que de rester enfermé dans ce qui est considéré comme un progrès
+  standard ou typique.

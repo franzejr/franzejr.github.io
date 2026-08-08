@@ -1,17 +1,18 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  lang="en"
+  path="/"
+  title="Franze M — Software Engineer"
+  description="Personal site of Franze M: software engineer, notes and blog posts."
+>
+  <h1>Hi, I'm Franze</h1>
+  <p>
+    Software engineer with 10+ years of experience building web applications,
+    distributed systems, and cross-platform mobile solutions. I work mostly
+    with Ruby, JavaScript, Python, and Elixir, and I write about what I'm
+    learning along the way.
+  </p>
+</BaseLayout>

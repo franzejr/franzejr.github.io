@@ -1,0 +1,136 @@
+title: "Be Curious, Get Obsessive, There Is No Speed Limit"
+description: "Three things I've noticed great software developers have in common, and what we can learn from them."
+publishDate: 2024-01-05
+lang: en
+translationId: be-curious-get-obsessive-no-speed-limit
+tags: [career, mindset]
+body: |
+  Being a software developer for years, I've seen many good people working
+  with me. What do all these good people have in common? Can we learn
+  something from them?
+
+  ## Be curious
+
+  As a software developer, you need to be curious. You need to ask yourself
+  every time: "why is this code like this?" Why do we have this code like
+  this? Can we improve this code? Can this code be optimized?
+
+  I remember many times when someone approached me and asked: "Why do we
+  have this?" Just this simple question made me think more deeply about the
+  problem.
+
+  Embracing curiosity makes you go deeper into the codebase, exploring
+  possibilities for enhancement and efficiency. The constant questioning is
+  what leads you to more elegant solutions, better performance, and,
+  ultimately, higher-quality software.
+
+  ## Get obsessive
+
+  Although the word "obsession" might sound bad, there is a good part to it.
+  It's a synonym for passion. Passion is often defined as an intense desire
+  or enthusiasm for something.
+
+  Some people use this word when talking about improvement or getting
+  better at something — for example, [David Goggins](https://www.youtube.com/watch?v=fuaxuHYd8kk).
+
+  People typically use the word "obsessive" because it signifies a strong
+  enthusiasm or excitement for something. Being passionate about what you're
+  doing brings a sense of purpose and fulfillment to your life. It motivates
+  you to put in the effort and dedication needed to succeed — you're
+  embracing your passion and letting it drive you towards your goals.
+
+  Where that passion pays off most is in quality. Commit to competence:
+  care about the craft itself, not only about shipping. Be obsessive about
+  the pull requests you open — read them again before anyone else has to,
+  and treat the ones you review with the same attention you'd want on your
+  own. Strive to do the best you can.
+
+  ## There is no speed limit
+
+  [This article](https://sive.rs/kimo) talks about the importance of pace,
+  and how it shouldn't be compared to others'. It's important to remember
+  that everyone has their own limits and pace, so comparing yourself to
+  someone else isn't productive.
+
+  Although it's essential not to compare yourself with others, it's equally
+  important not to limit yourself. Make sure to write the best code and do
+  your best in everything you do.
+
+  Remember: you are the protagonist of your career. It is not your
+  manager's job to take ownership of it — you should take ownership of your
+  own career and be prepared to face the positive or negative consequences
+  of your actions. This may sound like a cliché, but if you apply this
+  mindset to every decision you make, you'll start taking each step in your
+  career more consciously.
+
+  Expand your knowledge by stepping outside your comfort zone. As a software
+  developer, it's critical to embrace challenges and explore unfamiliar
+  areas — whether that means learning a new programming language or
+  tackling complex problems. Cultivate a mindset of continuous growth and
+  improvement.
+
+  Personal projects and self-improvement are crucial in a software
+  engineering career. Devoting time beyond regular work hours to personal
+  growth, exploring new technologies, and hands-on learning through
+  personal projects can have a huge impact on your growth. This is an extra
+  investment that often leads to advancement in skills — as Robert C.
+  Martin puts it, reading and exercising are always good and will help you.
+
+  What are the things you want to improve?
+
+  - Don't feel comfortable with regex? Spend time studying and practicing.
+  - Don't feel comfortable with Ruby? Go spin up a Rails project and learn.
+  - Struggling with SQL? Go practice with your database.
+  - Not confident with Git? Practice branching, merging, rebasing, and
+    resolving conflicts by collaborating on open-source projects or
+    creating your own repository.
+  - Feeling challenged by debugging? Take a buggy codebase, intentionally
+    introduce bugs, and practice systematically debugging and resolving
+    each one.
+  - Want to improve performance? Identify a slow-performing part of your
+    application and work on optimizing it by analyzing bottlenecks and
+    applying performance techniques.
+  - Struggling to keep up with new technologies? Dedicate time to
+    newsletters, blogs, podcasts, or courses related to your field to stay
+    current with industry trends.
+
+  Get out of your comfort zone. Spend time with yourself and the code.
+
+  Many developers I know have, at some point in their lives, become deeply
+  immersed in building things and focused on the process of learning. That
+  time is often crucial for both their personal growth and professional
+  development.
+
+  From the book [The Clean Coder](https://www.goodreads.com/book/show/11486819-clean-coder-the):
+
+  > Your career is your responsibility. It is not your employer's
+  > responsibility to make sure you are marketable. It is not your
+  > employer's responsibility to train you, or to send you to conferences,
+  > or to buy you books. These things are your responsibility. Woe to the
+  > software developer who entrusts his career to his employer. [...]
+  > You owe your employer a certain amount of time and effort. For the sake
+  > of argument, let's use the U.S. standard of 40 hours per week. These 40
+  > hours should be spent on your employer's problems, not on your
+  > problems. You should plan on working 60 hours per week. The first 40
+  > are for your employer. The remaining 20 are for you. During this
+  > remaining 20 hours you should be reading, practicing, learning, and
+  > otherwise enhancing your career. [...] Presumably you became a software
+  > developer because you are passionate about software and your desire to
+  > be a professional is motivated by that passion. During that 20 hours
+  > you should be doing those things that reinforce that passion. Those 20
+  > hours should be fun!
+
+  ## Conclusion
+
+  Be curious. It's what drives exploration, innovation, and problem-solving.
+  Keeping that flame of curiosity burning leads to constant learning and
+  growth.
+
+  Get obsessive with good quality. For programmers, that means poring over
+  a pull request over and over again until it's as aesthetically pleasing
+  as it is functionally correct.
+
+  There is no speed limit. It's about challenging yourself constantly and
+  pushing through discomfort to achieve your goals — setting your own pace,
+  driven by your own passion and dedication, instead of being bound by
+  what's considered standard or typical progress.
