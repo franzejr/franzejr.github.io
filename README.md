@@ -1,43 +1,68 @@
-# Astro Starter Kit: Minimal
+# franzejr.github.io
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Personal site and blog, built with [Astro](https://astro.build) and hosted on
+GitHub Pages. Available in English, French, and Portuguese (Brazil).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- English: https://franzejr.github.io/
+- French: https://franzejr.github.io/fr/
+- Portuguese (Brazil): https://franzejr.github.io/pt-br/
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## Project structure
 
 ```text
 /
-├── public/
 ├── src/
+│   ├── content/
+│   │   └── blog/
+│   │       ├── en/*.yaml
+│   │       ├── fr/*.yaml
+│   │       └── pt-br/*.yaml
+│   ├── content.config.ts     # blog collection schema (zod)
+│   ├── i18n/                 # UI strings dictionary + helpers
+│   ├── layouts/               # BaseLayout (head, header, main)
+│   ├── components/            # Header, LanguageSwitcher, PostCard
 │   └── pages/
-│       └── index.astro
-└── package.json
+│       ├── index.astro        # English (default, no prefix)
+│       ├── fr/                # French routes
+│       └── pt-br/             # Portuguese (Brazil) routes
+└── astro.config.mjs           # i18n config (default: en)
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+English is the default locale and lives at the root (`/`, `/blog/`,
+`/contact/`); French and Portuguese live under `/fr/` and `/pt-br/`.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Writing a blog post
 
-Any static assets, like images, can be placed in the `public/` directory.
+Each post is a plain YAML file under `src/content/blog/<lang>/<slug>.yaml`:
 
-## 🧞 Commands
+```yaml
+title: "Post title"
+description: "One-sentence summary."
+publishDate: 2024-01-05
+lang: en
+translationId: some-shared-id
+tags: [career]
+body: |
+  Markdown content goes here.
+```
 
-All commands are run from the root of the project, from a terminal:
+To publish a translation of an existing post, add a file with the same
+`translationId` under the other language's folder (the slug/filename can
+differ). The language switcher on a post page links to the matching
+translation when one exists, and falls back to that language's blog index
+otherwise.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Local development
 
-## 👀 Want to learn more?
+```sh
+npm install
+npm run dev       # http://localhost:4321
+npm run build     # outputs to ./dist
+npm run preview   # preview the production build locally
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Deployment
+
+Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds
+the site and publishes it to GitHub Pages (Pages is configured with
+"GitHub Actions" as its source).
