@@ -1,0 +1,78 @@
+title: "Les outils que j'utilise en juillet 2026"
+description: "Une liste simple des outils de terminal, d'éditeur et d'IA que j'utilise pour coder."
+publishDate: 2026-07-02
+lang: fr
+translationId: ai-coding-tools
+tags: [tools, ai, workflow]
+body: |
+  Plusieurs personnes m'ont demandé comment je travaille maintenant que
+  l'IA fait partie de mon quotidien. Voici donc ce qu'il y a vraiment
+  dans ma configuration en ce moment.
+
+  ## L'agent
+
+  J'utilise surtout [Claude Code](https://claude.com/claude-code). Il
+  écrit du code, relit les diffs et lance des commandes pour moi.
+
+  J'ai aussi quelques skills personnalisées pour les choses que je fais
+  souvent.
+
+  ## Terminal et sessions
+
+  J'ai utilisé tmux pendant des années. À un moment, j'ai modifié ma
+  config tmux pour qu'elle ressemble à [Herdr](https://herdr.dev/). Plus
+  tard, je suis simplement passé à Herdr et j'ai laissé tmux de côté pour
+  de bon.
+
+  Herdr garde mes sessions de terminal actives, même si je ferme mon
+  ordinateur portable ou que je perds le wifi. Il me montre aussi quels
+  agents travaillent, sont bloqués, ou sont juste inactifs. Je m'en sers
+  surtout pour les git worktrees. Je crée un worktree par branche et je
+  fais tourner l'application dedans, ce qui me permet d'avoir plusieurs
+  agents qui travaillent sur le même projet en même temps, sans qu'ils se
+  marchent dessus.
+
+  J'ai aussi essayé [Worktrunk](https://github.com/max-sixty/worktrunk)
+  pendant un moment. C'est plutôt sympa, surtout si on l'utilise avec
+  tmux. Mais Herdr gère déjà les worktrees pour moi, donc je n'en avais
+  pas vraiment besoin.
+
+  Mon terminal, c'est [Ghostty](https://ghostty.org/). J'ai aussi essayé
+  Kitty, Cmux et Muxy en chemin. Muxy avait un très bon support pour les
+  spaces, mais Herdr et Ghostty sont ce qui est resté.
+
+  Pour le Markdown dans le terminal, j'utilise [Leaf](https://github.com/rivolink/leaf).
+  Je m'en sers encore beaucoup.
+
+  J'utilise aussi parfois [Tailscale](https://tailscale.com/), surtout
+  pour accéder à mon ordinateur principal quand je ne suis pas à mon
+  bureau.
+
+  ## Éditeur et relecture
+
+  J'écris toujours mon code dans [Neovim](https://neovim.io/). Utiliser
+  l'IA pour ajuster ma config m'a beaucoup aidé. J'ai enfin une
+  configuration proche de ce que je veux vraiment, un truc que je
+  repoussais depuis des années.
+
+  Pour les diffs, je les lis en général directement dans le terminal.
+  Pour les changements plus gros faits par un agent, j'ouvre
+  [Hunk](https://github.com/modem-dev/hunk). C'est fait exactement pour
+  ce genre de relecture.
+
+  J'ouvre encore [Zed](https://zed.dev/) de temps en temps, surtout pour
+  lire du code.
+
+  J'ai aussi utilisé [Cursor](https://cursor.com/), et c'est bien. J'aime
+  bien qu'on puisse changer de modèle facilement là-bas. Mais les autres
+  éditeurs me suffisent largement. Du coup, aujourd'hui, j'utilise
+  Cursor surtout si quelqu'un me paie pour ça. mdr
+
+  ## Le reste
+
+  Pour le Markdown, j'utilise [Markdown Preview](https://github.com/pluk-inc/markdown-preview).
+  C'est une petite appli native pour Mac, donc je n'ai pas besoin
+  d'ouvrir un onglet de navigateur.
+
+  Pour les containers, j'utilise [OrbStack](https://orbstack.dev/). C'est
+  plus léger et plus rapide que Docker Desktop, en tout cas pour moi.

@@ -1,0 +1,67 @@
+title: "Tools I am using in July 2026"
+description: "A simple list of the terminal, editor, and AI tools I currently use for coding."
+publishDate: 2026-07-02
+lang: en
+translationId: ai-coding-tools
+tags: [tools, ai, workflow]
+body: |
+  A few people asked me lately how I work now that AI is part of my day.
+  So here's what's in my setup right now.
+
+  ## The agent
+
+  I use [Claude Code](https://claude.com/claude-code) the most. It writes
+  code, reviews diffs, and runs commands for me.
+
+  I also have a couple of custom skills set up for things I do a lot.
+
+  ## Terminal and sessions
+
+  I used tmux for years. At some point I changed my tmux setup to look
+  like [Herdr](https://herdr.dev/). Later, I just switched to Herdr and
+  dropped tmux for good.
+
+  Herdr keeps my terminal sessions alive, even if I close my laptop or
+  lose wifi. It also shows me which agents are working, stuck, or idle. I
+  mostly use it for git worktrees. I spin up one worktree per branch and
+  run the app inside it, so I can have a few agents working on the same
+  project at once, without them getting in each other's way.
+
+  I also tried [Worktrunk](https://github.com/max-sixty/worktrunk) for a
+  while. It's pretty cool, especially if you use it with tmux. But Herdr
+  already handles worktrees for me, so I didn't really need it.
+
+  My terminal is [Ghostty](https://ghostty.org/). I also tried Kitty,
+  Cmux, and Muxy along the way. Muxy was really good for spaces, but Herdr
+  and Ghostty are what stuck.
+
+  For Markdown in the terminal, I use [Leaf](https://github.com/rivolink/leaf).
+  I still use it a lot.
+
+  I use [Tailscale](https://tailscale.com/) sometimes too, mostly to reach
+  my main computer when I'm away from my desk.
+
+  ## Editor and review
+
+  I still write code in [Neovim](https://neovim.io/). Using AI to tweak
+  my config helped a lot. I finally got it set up close to how I want it,
+  something I put off for years.
+
+  For diffs, I usually just read them in the terminal. For bigger changes
+  made by an agent, I open [Hunk](https://github.com/modem-dev/hunk). It's
+  built just for that kind of review.
+
+  I still open [Zed](https://zed.dev/) sometimes, mostly to read code.
+
+  I've used [Cursor](https://cursor.com/) too, and it's good. I like that
+  you can switch models easily there. But the other editors work well
+  enough for me. So now I mostly only use Cursor if someone's paying me
+  to. lol
+
+  ## The rest
+
+  For Markdown, I use [Markdown Preview](https://github.com/pluk-inc/markdown-preview).
+  It's a small native Mac app, so I don't need to open a browser tab.
+
+  For containers, I use [OrbStack](https://orbstack.dev/). It's lighter
+  and faster than Docker Desktop, at least for me.
