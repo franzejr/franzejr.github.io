@@ -46,6 +46,8 @@ export const papers: Paper[] = [
   {
     title: 'Comparação entre Máquinas Virtuais Java e CLI em Algoritmos de Computação Numérica Intensiva',
     authors: ['Francisco José Lins Magalhães', 'Francisco Heron de Carvalho-Junior', 'Jefferson de Carvalho Silva'],
+    venue: 'Escola Regional de Computação Ceará, Maranhão e Piauí (ERCEMAPI)',
+    year: 2011,
     href: 'https://www.researchgate.net/profile/Francisco-De-Carvalho-Junior/publication/216878074_Comparacao_entre_Maquinas_Virtuais_Java_e_CLI_em_Algoritmos_de_Computacao_Numerica_Intensiva/links/0922b4f3b13dfdd750000000/Comparacao-entre-Maquinas-Virtuais-Java-e-CLI-em-Algoritmos-de-Computacao-Numerica-Intensiva.pdf',
     linkLabel: 'PDF',
     summary:
