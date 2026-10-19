@@ -1,6 +1,7 @@
 ---
 import { languages } from '../i18n/ui';
 import type { Lang } from '../i18n/ui';
+import { scholarUrl } from '../data/papers';
 
 interface Props {
   lang: Lang;
@@ -25,6 +26,7 @@ const otherLanguages = (Object.keys(languages) as Lang[]).filter((code) => code 
     <p>© {year} Franze M</p>
     <nav aria-label="Footer">
       <a href="https://github.com/franzejr">GitHub</a>
+      <a href={scholarUrl}>Google Scholar</a>
       <a href="mailto:franzejr@gmail.com">Email</a>
       {otherLanguages.map((code) => (
         <a href={hrefFor(code)} hreflang={code}>{languages[code]}</a>

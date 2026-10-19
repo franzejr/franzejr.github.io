@@ -15,6 +15,7 @@ const t = useTranslations(lang);
 const items: { href: string; label: string; active: boolean }[] = [
   { href: localizedPath(lang, '/'), label: t('nav.home'), active: path === '/' },
   { href: localizedPath(lang, '/blog'), label: t('nav.blog'), active: path.startsWith('/blog') },
+  { href: localizedPath(lang, '/papers'), label: t('nav.papers'), active: path.startsWith('/papers') },
   { href: localizedPath(lang, '/contact'), label: t('nav.contact'), active: path.startsWith('/contact') },
 ];
 ---

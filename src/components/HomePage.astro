@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostCard from './PostCard.astro';
 import { getPostsByLang, formatDate } from '../lib/posts';
+import { papers, scholarUrl } from '../data/papers';
 import { useTranslations, localizedPath } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 
@@ -44,6 +45,23 @@ const posts = (await getPostsByLang(lang)).slice(0, 3);
       ))}
     </section>
   )}
+
+  <section class="latest papers">
+    <div class="latest-head">
+      <h2 class="eyebrow">{t('home.papers')}</h2>
+      <a class="mono all" href={localizedPath(lang, '/papers')}>{t('papers.all')} →</a>
+    </div>
+    {papers.map((paper) => (
+      <div class="row entry">
+        <p class="mono muted year">{paper.year ?? '—'}</p>
+        <div class="paper">
+          <h3><a class="title-link" href={localizedPath(lang, '/papers')}>{paper.title}</a></h3>
+          {paper.venue && <p class="mono muted venue">{paper.venue}</p>}
+        </div>
+      </div>
+    ))}
+    <a class="mono scholar" href={scholarUrl}>{t('papers.scholar')} →</a>
+  </section>
 </BaseLayout>
 
 <style>
@@ -111,6 +129,36 @@ const posts = (await getPostsByLang(lang)).slice(0, 3);
     font-size: 0.8125rem;
     padding-top: 0.5rem;
   }
+  .papers {
+    margin-top: 5rem;
+  }
+  .papers .entry {
+    padding: 1.25rem 0;
+  }
+  .year {
+    font-size: 0.8125rem;
+    padding-top: 0.2rem;
+  }
+  .paper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+  .paper h3 {
+    font-size: 1.375rem;
+    line-height: 1.25;
+  }
+  .venue {
+    font-size: 0.75rem;
+  }
+  .scholar {
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    padding-top: 1.25rem;
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+  }
   @media (max-width: 640px) {
     .hero {
       margin-top: 0;
@@ -122,7 +170,11 @@ const posts = (await getPostsByLang(lang)).slice(0, 3);
     .latest {
       margin-top: 4rem;
     }
-    .entry time {
+    .papers {
+      margin-top: 3.5rem;
+    }
+    .entry time,
+    .year {
       padding-top: 0;
     }
   }

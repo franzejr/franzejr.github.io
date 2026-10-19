@@ -18,6 +18,7 @@ GitHub Pages. Available in English, French, and Portuguese (Brazil).
 │   │       ├── fr/*.yaml
 │   │       └── pt-br/*.yaml
 │   ├── content.config.ts     # blog collection schema (zod)
+│   ├── data/papers.ts        # academic papers listed on /papers (+ Google Scholar link)
 │   ├── i18n/                 # UI strings dictionary + helpers
 │   ├── layouts/               # BaseLayout (head, header, main)
 │   ├── components/            # Header, Footer, LanguageSwitcher, PostCard,
@@ -29,7 +30,7 @@ GitHub Pages. Available in English, French, and Portuguese (Brazil).
 └── astro.config.mjs           # i18n config (default: en)
 ```
 
-English is the default locale and lives at the root (`/`, `/blog/`,
+English is the default locale and lives at the root (`/`, `/blog/`, `/papers/`,
 `/contact/`); French and Portuguese live under `/fr/` and `/pt-br/`.
 
 ## Writing a blog post
