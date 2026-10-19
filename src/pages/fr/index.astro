@@ -1,18 +1,17 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import HomePage from '../../components/HomePage.astro';
 ---
 
-<BaseLayout
+<HomePage
   lang="fr"
-  path="/"
   title="Franze M — Ingénieur logiciel"
   description="Site personnel de Franze M : ingénieur logiciel, notes et articles de blog."
 >
-  <h1>Salut, je suis Franze</h1>
+  <Fragment slot="heading">Salut, je suis <em>Franze</em>.</Fragment>
   <p>
     Ingénieur logiciel avec plus de 10 ans d'expérience dans la création
     d'applications web, de systèmes distribués et de solutions mobiles
     multiplateformes. Je travaille principalement avec Ruby, JavaScript,
     Python et Elixir, et j'écris sur ce que j'apprends en cours de route.
   </p>
-</BaseLayout>
+</HomePage>

@@ -1,0 +1,68 @@
+---
+import { languages } from '../i18n/ui';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  path: string;
+  langLinks?: Partial<Record<Lang, string>>;
+}
+
+const { lang, path, langLinks } = Astro.props;
+const year = new Date().getFullYear();
+
+function hrefFor(target: Lang) {
+  if (langLinks?.[target]) return langLinks[target] as string;
+  const clean = path === '/' ? '' : path;
+  return target === 'en' ? `${clean}/` || '/' : `/${target}${clean}/`;
+}
+
+const otherLanguages = (Object.keys(languages) as Lang[]).filter((code) => code !== lang);
+---
+
+<footer class="site-footer">
+  <div class="bar">
+    <p>© {year} Franze M</p>
+    <nav aria-label="Footer">
+      <a href="https://github.com/franzejr">GitHub</a>
+      <a href="mailto:franzejr@gmail.com">Email</a>
+      {otherLanguages.map((code) => (
+        <a href={hrefFor(code)} hreflang={code}>{languages[code]}</a>
+      ))}
+    </nav>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--rule);
+  }
+  .bar {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.75rem var(--gutter) 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem 2rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+  }
+  nav a {
+    color: var(--muted);
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+  }
+  nav a:hover {
+    color: var(--ink);
+    text-decoration: none;
+  }
+</style>

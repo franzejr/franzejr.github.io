@@ -20,7 +20,8 @@ GitHub Pages. Available in English, French, and Portuguese (Brazil).
 │   ├── content.config.ts     # blog collection schema (zod)
 │   ├── i18n/                 # UI strings dictionary + helpers
 │   ├── layouts/               # BaseLayout (head, header, main)
-│   ├── components/            # Header, LanguageSwitcher, PostCard
+│   ├── components/            # Header, Footer, LanguageSwitcher, PostCard,
+│   │                          # and the shared HomePage/BlogIndexPage/PostPage/ContactPage
 │   └── pages/
 │       ├── index.astro        # English (default, no prefix)
 │       ├── fr/                # French routes

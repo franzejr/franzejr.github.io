@@ -1,41 +1,63 @@
 ---
-import { slugOf, type Post } from '../lib/posts';
+import { slugOf, formatDate, readingTime, type Post } from '../lib/posts';
 import { useTranslations } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 
 interface Props {
   post: Post;
   lang: Lang;
+  // Hide the date when the surrounding layout already shows it (home page).
+  showDate?: boolean;
 }
 
-const { post, lang } = Astro.props;
+const { post, lang, showDate = true } = Astro.props;
 const t = useTranslations(lang);
 const prefix = lang === 'en' ? '' : `/${lang}`;
 const href = `${prefix}/blog/${slugOf(post)}/`;
-const formattedDate = post.data.publishDate.toLocaleDateString(lang, {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-});
+const isoDate = post.data.publishDate.toISOString().slice(0, 10);
 ---
 
 <article class="post-card">
-  <h2><a href={href}>{post.data.title}</a></h2>
-  <p class="muted date">{formattedDate}</p>
-  <p>{post.data.description}</p>
-  <a class="read-more" href={href}>{t('blog.readMore')} →</a>
+  <h2><a class="title-link" href={href}>{post.data.title}</a></h2>
+  <p class="description">{post.data.description}</p>
+  <div class="meta">
+    {showDate && (
+      <>
+        <time datetime={isoDate}>{formatDate(post.data.publishDate, lang)}</time>
+        <span class="sep" aria-hidden="true">·</span>
+      </>
+    )}
+    <span>{readingTime(post)} {t('blog.minRead')}</span>
+    {post.data.tags.length > 0 && <span class="sep" aria-hidden="true">·</span>}
+    {post.data.tags.map((tag) => <span class="tag">{tag}</span>)}
+  </div>
 </article>
 
 <style>
   .post-card {
-    padding: 1.5rem 0;
-    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
   }
-  .post-card:first-of-type {
-    padding-top: 0;
+  h2 {
+    font-size: 1.875rem;
+    line-height: 1.15;
   }
-  .date {
-    font-size: 0.875rem;
-    margin-top: -0.5rem;
+  .description {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+  .meta {
+    padding-top: 0.25rem;
+  }
+  .meta .tag {
+    font-size: 0.6875rem;
+    letter-spacing: 0.04em;
+  }
+  @media (max-width: 640px) {
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 </style>

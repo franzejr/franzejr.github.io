@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { useTranslations } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+}
+
+const { lang, title, description } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<BaseLayout lang={lang} path="/contact" title={title} description={description}>
+  <section class="contact">
+    <h1 class="page-title">{t('nav.contact')}</h1>
+    <p class="lede">{t('contact.intro')}</p>
+    <dl class="links">
+      <div class="row">
+        <dt class="eyebrow muted">{t('contact.email')}</dt>
+        <dd><a href="mailto:franzejr@gmail.com">franzejr@gmail.com</a></dd>
+      </div>
+      <div class="row">
+        <dt class="eyebrow muted">{t('contact.github')}</dt>
+        <dd><a href="https://github.com/franzejr">github.com/franzejr</a></dd>
+      </div>
+    </dl>
+  </section>
+</BaseLayout>
+
+<style>
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 45rem;
+  }
+  .links {
+    margin: 2.5rem 0 0;
+    border-top: 1px solid var(--rule);
+  }
+  .links .row {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  dt {
+    padding-top: 0.2rem;
+  }
+  dd {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+</style>

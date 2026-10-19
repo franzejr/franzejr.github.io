@@ -21,36 +21,39 @@ function hrefFor(target: Lang) {
 ---
 
 <nav class="lang-switcher" aria-label="Language switcher">
-  {Object.entries(languages).map(([code, label], i) => (
-    <>
-      {i > 0 && <span class="sep" aria-hidden="true">·</span>}
-      <a
-        href={hrefFor(code as Lang)}
-        title={label}
-        aria-current={code === lang ? 'true' : undefined}
-        class={code === lang ? 'active' : ''}
-      >
-        {languageCodes[code as Lang]}
-      </a>
-    </>
+  {Object.entries(languages).map(([code, label]) => (
+    <a
+      href={hrefFor(code as Lang)}
+      title={label}
+      hreflang={code}
+      aria-current={code === lang ? 'true' : undefined}
+    >
+      {languageCodes[code as Lang]}
+    </a>
   ))}
 </nav>
 
 <style>
   .lang-switcher {
-    display: flex;
-    align-items: center;
-    gap: 0.375rem;
-    font-size: 0.75rem;
-    letter-spacing: 0.02em;
+    display: inline-flex;
+    padding: 3px;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.06em;
   }
   .lang-switcher a {
-    color: var(--color-text-muted);
+    padding: 0.3rem 0.625rem;
+    border-radius: 999px;
+    color: var(--muted);
   }
-  .lang-switcher a.active {
-    color: var(--color-accent);
+  .lang-switcher a:hover {
+    color: var(--ink);
+    text-decoration: none;
   }
-  .lang-switcher .sep {
-    color: var(--color-border);
+  .lang-switcher a[aria-current='true'] {
+    color: var(--paper);
+    background: var(--ink);
   }
 </style>
